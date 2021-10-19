@@ -1,0 +1,14 @@
+<h1>Post Create:</h1>
+
+<form [formGroup]="postCreateForm" (ngSubmit)="onSubmit()">
+    <div class="form-floating mb-3" >
+        <input formControlName="title" type="text" class="form-control" id="post-title" placeholder="Your post title">
+        <label for="post-title">Post Title</label>
+      </div>
+    <div class="form-floating">
+        <textarea formControlName="body" class="form-control" placeholder="Write post text here" id="post-body"
+            style="height: 120px"></textarea>
+        <label for="post-body">Post Body</label>
+    </div>
+    <button type="submit" class="btn btn-outline-primary">Create &raquo;</button>
+</form>
